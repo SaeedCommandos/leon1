@@ -1,0 +1,61 @@
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .header{
+    padding: 20px;
+}
+               /*container*/
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+                /* logo */
+.header .logo{
+    width: 60px ;
+}
+/* icon   links ==> icon (span)-->*/
+
+.header .links{
+    position: relative;
+}
+/* properties of icon */
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex end to reflect */
+
+    justify-content: flex-end;
+}
+/*----------------- properties of spans   Design ------------------- */
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 10px;
+    height: 2px;
+}
+.header .links .icon span:first-child{
+    width: 100%;
+}
+/* hover transition 0.3s */
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+    
+}
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    /* width increase to 100%*/
+    transition: 0.3s;
+}
+.header .links .icon span:last-child{
+    width: 100%;
+}
+/* -------------------Table---------------x`*/
+
+
+
